@@ -1,5 +1,53 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
 /* common styles and utilities */
-*{
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* header styles */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.navbar-logo {}
+
+.navbar-logo h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.navbar-menu ul {
+    display: flex;
+}
+
+.navbar-menu ul li {
+    margin-left: 60px;
+}
+
+.navbar-menu ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
 }
