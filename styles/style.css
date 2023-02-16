@@ -168,8 +168,6 @@ header {
 
 .service {
     padding: 35px;
-    width: 550px;
-    height: 88px;
     box-shadow: 5px 10px 80px rgb(0 0 0 / 10%);
     border-radius: 10px;
     margin-bottom: 30px;
@@ -274,7 +272,16 @@ header {
     padding-top: 80px;
     display: flex;
     justify-content: space-between;
+
+}
+
+.sponsors-img img {
     filter: grayscale(1);
+    transform: 0.3s;
+}
+
+.sponsors-img img:hover {
+    filter: grayscale(0);
 }
 
 /* contact styles */
@@ -347,4 +354,150 @@ header {
     text-align: center;
     font-size: 20px;
     color: #424242;
+}
+
+/* media query for mobile devices */
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        text-align: center;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar-menu ul li {
+        text-align: center;
+        padding: 8px 0;
+        margin-left: 0;
+    }
+
+    .header-details .header-title {
+        font-size: 25px;
+    }
+
+    .header-banner img {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features-img {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+
+    .features-details .features-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .features-details .features-description {
+        text-align: center;
+    }
+
+    .features-btn {
+        text-align: center;
+    }
+
+    .services-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-details .services-features-title {
+        border-left: 0;
+        font-size: 40px;
+        padding-left: 0;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services-img img {
+        width: 100%;
+    }
+
+    .service-btn {
+        margin-top: 24px;
+        position: static;
+    }
+
+    .working-achievement-title {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .working-achievement-description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .working-achievements {
+        flex-direction: column;
+        margin-left: 78px;
+    }
+
+    .single-achievement {
+        margin-bottom: 20px;
+    }
+
+    .sponsors-title {
+        font-size: 40px;
+    }
+
+    .sponsors-img {
+        flex-direction: column;
+    }
+
+    .sponsors-img a {
+        text-align: center;
+    }
+
+    .sponsors-img img {
+        margin-bottom: 30px;
+    }
+
+    .contact-title {
+        font-size: 40px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .newsletter {
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .newsletter input::placeholder {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
 }
