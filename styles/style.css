@@ -13,6 +13,11 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .container {
     width: 1440px;
     margin: 0 auto;
@@ -30,19 +35,18 @@ body {
     cursor: pointer;
 }
 
-/* header styles */
+/* header part styles */
 header {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+/* navbar part styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
 }
-
-.navbar-logo {}
 
 .navbar-logo h2 {
     font-weight: 700;
@@ -64,6 +68,8 @@ header {
     color: #424242;
 }
 
+
+/* header details styles */
 .header-details {
     text-align: center;
     width: 862px;
@@ -81,9 +87,113 @@ header {
     color: #727272;
     padding-bottom: 45px;
 }
-.header-btn{
+
+.header-btn {
     padding-bottom: 45px;
 }
-.header-banner{
+
+/* header banner styles */
+.header-banner {
     padding-bottom: 45px;
+}
+
+/* main styles */
+
+/* features styles */
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features-img {
+    margin-left: 100px;
+    width: 708px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+
+.features-details {
+    margin-right: 100px;
+    margin-left: 74px;
+}
+
+.features-details .features-title {
+    font-weight: 500;
+    font-size: 45px;
+    padding-bottom: 24px;
+    color: #131313;
+}
+
+.features-title .features-title-gray {
+    color: #727272;
+    font-weight: normal;
+}
+
+.features-title .features-title-orange {
+    color: #FF900E;
+}
+
+.features-details .features-description {
+    color: #727272;
+    padding-bottom: 24px;
+}
+
+/* services styles */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 146px;
+}
+
+.services-details .services-features-title {
+    font-weight: 700;
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    ;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.services-details .services-features-description {
+    color: #727272;
+    padding-bottom: 30px;
+}
+
+.service {
+    padding: 30px;
+    width: 550px;
+    height: 88px;
+    box-shadow: 5px 10px 80px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service .service-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    padding-bottom: 10px;
+}
+
+.service .service-description {
+    color: #727272;
+}
+
+.services-btn {
+    position: relative;
+    left: 650px;
+    top: -140px;
+}
+
+.service-btn-size {
+    width: 342px;
+    height: 200px;
+}
+
+.service-btn-top-text {
+    font-weight: 700;
+    font-size: 65px;
 }
