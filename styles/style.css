@@ -18,6 +18,18 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    width: 180px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 /* header styles */
 header {
     background-color: rgba(255, 144, 14, 0.1);
@@ -50,4 +62,28 @@ header {
     font-weight: 500;
     font-size: 18px;
     color: #424242;
+}
+
+.header-details {
+    text-align: center;
+    width: 862px;
+    padding-top: 100px;
+}
+
+.header-details .header-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #131313;
+    padding-bottom: 45px;
+}
+
+.header-details .header-description {
+    color: #727272;
+    padding-bottom: 45px;
+}
+.header-btn{
+    padding-bottom: 45px;
+}
+.header-banner{
+    padding-bottom: 45px;
 }
